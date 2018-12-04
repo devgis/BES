@@ -1,0 +1,120 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C2D810B4-5590-447D-9D2C-C8C8D90DFC3C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BES.Forms</RootNamespace>
+    <AssemblyName>BES.Forms</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Other\ViewPhoto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Other\ViewPhoto.designer.cs">
+      <DependentUpon>ViewPhoto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UserManager\AddUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserManager\AddUser.designer.cs">
+      <DependentUpon>AddUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserManager\ChgPassWord.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserManager\ChgPassWord.designer.cs">
+      <DependentUpon>ChgPassWord.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserManager\EditUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserManager\EditUser.designer.cs">
+      <DependentUpon>EditUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserManager\UserList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserManager\UserList.designer.cs">
+      <DependentUpon>UserList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WaitForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WaitForm.designer.cs">
+      <DependentUpon>WaitForm.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Other\ViewPhoto.resx">
+      <DependentUpon>ViewPhoto.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserManager\AddUser.resx">
+      <DependentUpon>AddUser.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserManager\ChgPassWord.resx">
+      <DependentUpon>ChgPassWord.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserManager\EditUser.resx">
+      <DependentUpon>EditUser.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserManager\UserList.resx">
+      <DependentUpon>UserList.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BES.Bll\BES.BLL.csproj">
+      <Project>{DD57C459-7B25-4130-8423-5B576C17DA28}</Project>
+      <Name>BES.BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BES.Entities\BES.Entities.csproj">
+      <Project>{E2227BEF-126F-44BD-81AC-21FBBDB7F119}</Project>
+      <Name>BES.Entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BES.WSAL\BES.WSAL.csproj">
+      <Project>{5855CACC-2E7E-4EC3-A5FC-FEAB4A437724}</Project>
+      <Name>BES.WSAL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

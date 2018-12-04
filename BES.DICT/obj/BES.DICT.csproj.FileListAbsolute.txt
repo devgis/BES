@@ -1,0 +1,5 @@
+E:\Work\BES\BES\BES.DICT\bin\Debug\BES.DICT.dll
+E:\Work\BES\BES\BES.DICT\bin\Debug\BES.DICT.pdb
+E:\Work\BES\BES\BES.DICT\obj\Debug\ResolveAssemblyReference.cache
+E:\Work\BES\BES\BES.DICT\obj\Debug\BES.DICT.dll
+E:\Work\BES\BES\BES.DICT\obj\Debug\BES.DICT.pdb

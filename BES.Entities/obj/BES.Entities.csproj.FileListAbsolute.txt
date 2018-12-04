@@ -1,0 +1,10 @@
+E:\Work\BES\BES\BES.Entities\bin\Debug\BES.Entities.dll
+E:\Work\BES\BES\BES.Entities\bin\Debug\BES.Entities.pdb
+E:\Work\BES\BES\BES.Entities\obj\Debug\ResolveAssemblyReference.cache
+E:\Work\BES\BES\BES.Entities\obj\Debug\BES.Entities.dll
+E:\Work\BES\BES\BES.Entities\obj\Debug\BES.Entities.pdb
+E:\Work\BES\BES\BES.Entities\bin\Release\BES.Entities.dll
+E:\Work\BES\BES\BES.Entities\bin\Release\BES.Entities.pdb
+E:\Work\BES\BES\BES.Entities\obj\Release\ResolveAssemblyReference.cache
+E:\Work\BES\BES\BES.Entities\obj\Release\BES.Entities.dll
+E:\Work\BES\BES\BES.Entities\obj\Release\BES.Entities.pdb

@@ -1,0 +1,10 @@
+E:\Work\BES\BES\BES.Common\obj\Debug\ResolveAssemblyReference.cache
+E:\Work\BES\BES\BES.Common\bin\Debug\BES.Common.dll
+E:\Work\BES\BES\BES.Common\bin\Debug\BES.Common.pdb
+E:\Work\BES\BES\BES.Common\obj\Debug\BES.Common.dll
+E:\Work\BES\BES\BES.Common\obj\Debug\BES.Common.pdb
+E:\Work\BES\BES\BES.Common\bin\Release\BES.Common.dll
+E:\Work\BES\BES\BES.Common\bin\Release\BES.Common.pdb
+E:\Work\BES\BES\BES.Common\obj\Release\ResolveAssemblyReference.cache
+E:\Work\BES\BES\BES.Common\obj\Release\BES.Common.dll
+E:\Work\BES\BES\BES.Common\obj\Release\BES.Common.pdb

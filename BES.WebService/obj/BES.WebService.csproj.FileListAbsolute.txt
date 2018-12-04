@@ -1,0 +1,16 @@
+E:\Work\BES\BES\BES.WebService\bin\BES.WebService.dll
+E:\Work\BES\BES\BES.WebService\bin\BES.WebService.pdb
+E:\Work\BES\BES\BES.WebService\obj\Debug\ResolveAssemblyReference.cache
+E:\Work\BES\BES\BES.WebService\obj\Debug\BES.WebService.dll
+E:\Work\BES\BES\BES.WebService\obj\Debug\BES.WebService.pdb
+E:\Work\BES\BES\BES.WebService\bin\BES.Common.dll
+E:\Work\BES\BES\BES.WebService\bin\BES.Common.pdb
+E:\Work\BES\BES\BES.WebService\bin\BES.BLL.dll
+E:\Work\BES\BES\BES.WebService\bin\BES.Entities.dll
+E:\Work\BES\BES\BES.WebService\bin\BES.DAL.dll
+E:\Work\BES\BES\BES.WebService\bin\BES.BLL.pdb
+E:\Work\BES\BES\BES.WebService\bin\BES.DAL.pdb
+E:\Work\BES\BES\BES.WebService\bin\BES.Entities.pdb
+E:\Work\BES\BES\BES.WebService\obj\Release\ResolveAssemblyReference.cache
+E:\Work\BES\BES\BES.WebService\obj\Release\BES.WebService.dll
+E:\Work\BES\BES\BES.WebService\obj\Release\BES.WebService.pdb

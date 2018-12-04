@@ -1,0 +1,94 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BES", "BES\BES.csproj", "{795C74F4-E77B-429B-9564-3DEF5A37B377}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BES.BLL", "BES.Bll\BES.BLL.csproj", "{DD57C459-7B25-4130-8423-5B576C17DA28}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BES.DAL", "BES.Dal\BES.DAL.csproj", "{D917D27C-66FA-4894-AF38-4F06E023C306}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BES.WebService", "BES.WebService\BES.WebService.csproj", "{738CBFC0-2BE9-41CF-A3DF-92E2A98AEE68}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BES.WSAL", "BES.WSAL\BES.WSAL.csproj", "{5855CACC-2E7E-4EC3-A5FC-FEAB4A437724}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BES.Entities", "BES.Entities\BES.Entities.csproj", "{E2227BEF-126F-44BD-81AC-21FBBDB7F119}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BES.Common", "BES.Common\BES.Common.csproj", "{697E999A-1235-463D-AC66-FDC94C853795}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BES.Forms", "BES.Forms\BES.Forms.csproj", "{C2D810B4-5590-447D-9D2C-C8C8D90DFC3C}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{795C74F4-E77B-429B-9564-3DEF5A37B377}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{795C74F4-E77B-429B-9564-3DEF5A37B377}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{795C74F4-E77B-429B-9564-3DEF5A37B377}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{795C74F4-E77B-429B-9564-3DEF5A37B377}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DD57C459-7B25-4130-8423-5B576C17DA28}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD57C459-7B25-4130-8423-5B576C17DA28}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD57C459-7B25-4130-8423-5B576C17DA28}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD57C459-7B25-4130-8423-5B576C17DA28}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D917D27C-66FA-4894-AF38-4F06E023C306}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D917D27C-66FA-4894-AF38-4F06E023C306}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D917D27C-66FA-4894-AF38-4F06E023C306}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D917D27C-66FA-4894-AF38-4F06E023C306}.Release|Any CPU.Build.0 = Release|Any CPU
+		{738CBFC0-2BE9-41CF-A3DF-92E2A98AEE68}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{738CBFC0-2BE9-41CF-A3DF-92E2A98AEE68}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{738CBFC0-2BE9-41CF-A3DF-92E2A98AEE68}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{738CBFC0-2BE9-41CF-A3DF-92E2A98AEE68}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5855CACC-2E7E-4EC3-A5FC-FEAB4A437724}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5855CACC-2E7E-4EC3-A5FC-FEAB4A437724}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5855CACC-2E7E-4EC3-A5FC-FEAB4A437724}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5855CACC-2E7E-4EC3-A5FC-FEAB4A437724}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E2227BEF-126F-44BD-81AC-21FBBDB7F119}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E2227BEF-126F-44BD-81AC-21FBBDB7F119}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E2227BEF-126F-44BD-81AC-21FBBDB7F119}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E2227BEF-126F-44BD-81AC-21FBBDB7F119}.Release|Any CPU.Build.0 = Release|Any CPU
+		{697E999A-1235-463D-AC66-FDC94C853795}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{697E999A-1235-463D-AC66-FDC94C853795}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{697E999A-1235-463D-AC66-FDC94C853795}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{697E999A-1235-463D-AC66-FDC94C853795}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C2D810B4-5590-447D-9D2C-C8C8D90DFC3C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C2D810B4-5590-447D-9D2C-C8C8D90DFC3C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C2D810B4-5590-447D-9D2C-C8C8D90DFC3C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C2D810B4-5590-447D-9D2C-C8C8D90DFC3C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

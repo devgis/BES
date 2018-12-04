@@ -1,0 +1,208 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{795C74F4-E77B-429B-9564-3DEF5A37B377}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BES.Forms</RootNamespace>
+    <AssemblyName>BES</AssemblyName>
+    <ApplicationIcon>logo.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Infragistics2.Shared.v11.2, Version=11.2.20112.1010, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics2.Win.UltraWinGrid.v11.2, Version=11.2.20112.1010, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics2.Win.v11.2, Version=11.2.20112.1010, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AboutBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AboutBox.Designer.cs">
+      <DependentUpon>AboutBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BookManager\AddBook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BookManager\AddBook.Designer.cs">
+      <DependentUpon>AddBook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BookManager\AdvanceSearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BookManager\AdvanceSearch.Designer.cs">
+      <DependentUpon>AdvanceSearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BookManager\BookList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BookManager\BookList.Designer.cs">
+      <DependentUpon>BookList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BookManager\ImageList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BookManager\ImageList.Designer.cs">
+      <DependentUpon>ImageList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BookManager\ShowText.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BookManager\ShowText.Designer.cs">
+      <DependentUpon>ShowText.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BookManager\ViewEditBook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BookManager\ViewEditBook.Designer.cs">
+      <DependentUpon>ViewEditBook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ImageResource.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ImageResource.resx</DependentUpon>
+    </Compile>
+    <Compile Include="LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginForm.designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AboutBox.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AboutBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BookManager\AddBook.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AddBook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BookManager\AdvanceSearch.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AdvanceSearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BookManager\BookList.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>BookList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BookManager\ImageList.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ImageList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BookManager\ShowText.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ShowText.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BookManager\ViewEditBook.resx">
+      <DependentUpon>ViewEditBook.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ImageResource.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ImageResource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="App.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BES.Entities\BES.Entities.csproj">
+      <Project>{E2227BEF-126F-44BD-81AC-21FBBDB7F119}</Project>
+      <Name>BES.Entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BES.Forms\BES.Forms.csproj">
+      <Project>{C2D810B4-5590-447D-9D2C-C8C8D90DFC3C}</Project>
+      <Name>BES.Forms</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BES.WSAL\BES.WSAL.csproj">
+      <Project>{5855CACC-2E7E-4EC3-A5FC-FEAB4A437724}</Project>
+      <Name>BES.WSAL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bkgroud.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Exit.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="logo.ico" />
+    <None Include="AppStyle.isl">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="dict.db">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\Save.ico" />
+    <None Include="Resources\logo.ico" />
+    <None Include="Resources\link.ico" />
+    <None Include="Resources\del.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
