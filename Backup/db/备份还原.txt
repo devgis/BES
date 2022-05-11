@@ -1,0 +1,5 @@
+导出
+exp orcl/orcl@orcl file=C:\Work\BES\db\db.dmp owner=orcl
+
+导入
+imp orcl/orcl@orcl  file=C:\Work\BES\db\db.dmp ignore=y full=y

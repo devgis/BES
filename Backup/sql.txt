@@ -1,4 +1,143 @@
-exec sp_executesql N'UPDATE T_PLU SET AUTHOR=@AUTHOR,BINDING=@BINDING,BKSIZE=@BKSIZE,CLSCODE=@CLSCODE,DPTCODE=@DPTCODE,EDITION=@EDITION ,EXTCODE=@EXTCODE,FRANCHISEE=@FRANCHISEE,HIPRICE=@HIPRICE,ISABOOK=@ISABOOK,ISBN=@ISBN,ISISBN=@ISISBN,MODBY=@MODBY,MODDATE=@MODDATE,NPRINT=@NPRINT,PAGES=@PAGES,PKPC=@PKPC,PKQTY=@PKQTY,PKSTYLE=@PKSTYLE,PKWT=@PKWT,PRICE=@PRICE,PUBDATE=@PUBDATE,PYSTYPE=@PYSTYPE,RDISC=@RDISC,SERIES=@SERIES,SIJIAOHAO=@SIJIAOHAO,TITLE=@TITLE,TRANSLATOR=@TRANSLATOR,WORDS=@WORDS,DUZHEDINGWEI=@DUZHEDINGWEI,SHANGJIAJIANYI=@SHANGJIAJIANYI,MAIDIAN=@MAIDIAN,JIANJIE=@JIANJIE WHERE PLUCODE=@PLUCODE',N'@AUTHOR nvarchar(7),@BINDING nvarchar(2),@BKSIZE nvarchar(2),@CLSCODE nvarchar(7),@DPTCODE nvarchar(2),@EDITION int,@EXTCODE nvarchar(4000),@FRANCHISEE nvarchar(1),@HIPRICE decimal(1,0),@ISABOOK int,@ISBN nvarchar(17),@ISISBN int,@ISUSED int,@MODBY nvarchar(5),@MODDATE datetime,@NPRINT int,@PAGES int,@PKPC decimal(1,0),@PKQTY int,@PKSTYLE nvarchar(4000),@PKWT decimal(1,0),@PLUCODE nvarchar(36),@PRICE decimal(4,2),@PUBDATE datetime,@PYSTYPE nvarchar(1),@RDISC decimal(3,0),@SERIES nvarchar(7),@SIJIAOHAO nvarchar(36),@TITLE nvarchar(7),@TRANSLATOR nvarchar(4000),@WORDS int,@DuZheDingWei nvarchar(11),@ShangJiaJianYi nvarchar(17),@MaiDian nvarchar(23),@JianJie nvarchar(238)',@AUTHOR=N'雪漠3r434',@BINDING=N'10',@BKSIZE=N'04',@CLSCODE=N'TJ203.1',@DPTCODE=N'01',@EDITION=1,@EXTCODE=N'',@FRANCHISEE=N'-',@HIPRICE=0,@ISABOOK=9,@ISBN=N'978-7-5443-4543-9',@ISISBN=0,@ISUSED=0,@MODBY=N'admin',@MODDATE='2013-03-14 00:00:00',@NPRINT=1,@PAGES=1,@PKPC=0,@PKQTY=0,@PKSTYLE=N'',@PKWT=0,@PLUCODE=N'0b5c2da1-4381-4770-b81a-6474adafbe15',@PRICE=50.00,@PUBDATE='2013-03-10 00:00:00',@PYSTYPE=N'1',@RDISC=100,@SERIES=N'心灵瑜伽之二1',@SIJIAOHAO=N'0b5c2da1-4381-4770-b81a-6474adafbe15',@TITLE=N'让心属于你自己',@TRANSLATOR=N'',@WORDS=0,@DuZheDingWei=N'111saddsdsd',@ShangJiaJianYi=N'111fsfsfsfsfsfssf',@MaiDian=N'呃呃呃sfsdfgsfsfsfsfsfsfsf',@JianJie=N'中越边界“老尸人”的真实打捞日记，呈现西南水下最神秘领域的鬼事！
-对越反击战时，一支舟桥部队出现，屡建奇功。和平年代后，他们义务为群众在广西与越南交界的小镇打捞水下尸体和犯罪证据。在这个过程中，他们在水下经历了各种奇闻异事：水神怪尸、不腐的古代粽子、捞尸钩鬼阵、鱼妖群……随着捞尸人的一次次打捞，恐怖逐渐逼近，打捞起来的河妖该如何销毁？西南古怪的焚尸禁忌你又可曾听说过？
-这些都是历时数十年的水下打捞档案，时至今日，这些年近花甲的“老尸人”才开始回忆起当年遇到的诡异事件……
-'
+USE [BES]
+GO
+
+/****** Object:  Table [dbo].[t_PhotoFile]    Script Date: 03/07/2013 21:08:24 ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+SET ANSI_PADDING ON
+GO
+
+CREATE TABLE [dbo].[t_PhotoFile](
+	[FileID] [varchar](50) NOT NULL,
+	[BookID] [varchar](50) NULL,
+	[Photo] [image] NULL,
+	[PhotoFileName] [varchar](50) NULL,
+	[Remarks] [varchar](200) NULL,
+	[IsCover] [bit] NULL,
+ CONSTRAINT [PK_t_PhotoFile] PRIMARY KEY CLUSTERED 
+(
+	[FileID] ASC
+)WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY]
+) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
+
+GO
+
+SET ANSI_PADDING OFF
+GO
+
+ALTER TABLE [dbo].[t_PhotoFile] ADD  CONSTRAINT [DF_t_PhotoFile_IsCover]  DEFAULT ((0)) FOR [IsCover]
+GO
+
+
+
+
+/****** Object:  Table [dbo].[t_PLU]    Script Date: 03/07/2013 21:08:47 ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+SET ANSI_PADDING ON
+GO
+
+CREATE TABLE [dbo].[t_PLU](
+	[ISBN] [varchar](20) NULL,
+	[TITLE] [varchar](160) NOT NULL,
+	[AUTHOR] [varchar](80) NULL,
+	[TRANSLATOR] [varchar](80) NULL,
+	[SERIES] [varchar](160) NULL,
+	[PRICE] [decimal](19, 2) NULL,
+	[EDITION] [smallint] NULL,
+	[NPRINT] [smallint] NULL,
+	[CLSCODE] [varchar](20) NOT NULL,
+	[CATEGORY] [varchar](8) NULL,
+	[PUBLISHER] [varchar](10) NULL,
+	[PUBDATE] [datetime] NULL,
+	[PAGES] [smallint] NULL,
+	[WORDS] [int] NULL,
+	[BINDING] [varchar](6) NULL,
+	[CREDATE] [datetime] NULL,
+	[CREATBY] [varchar](6) NULL,
+	[SIJIAOHAO] [varchar](20) NULL,
+	[ISISBN] [smallint] NULL,
+	[PLUCODE] [varchar](20) NOT NULL,
+	[ISABOOK] [smallint] NOT NULL,
+	[EXTCODE] [varchar](8) NULL,
+	[BKSIZE] [varchar](6) NULL,
+	[FULLCAT] [varchar](12) NULL,
+	[PYSTYPE] [smallint] NOT NULL,
+	[MODDATE] [datetime] NULL,
+	[MODBY] [varchar](6) NULL,
+	[JP] [varchar](160) NULL,
+	[HIPRICE] [decimal](19, 2) NULL,
+	[AVPRICE] [decimal](19, 2) NULL,
+	[LSPRICE] [decimal](19, 2) NULL,
+	[LDATE] [datetime] NULL,
+	[DPTCODE] [varchar](6) NULL,
+	[PKSTYLE] [varchar](2) NULL,
+	[PKPC] [real] NULL,
+	[PKQTY] [smallint] NULL,
+	[PKWT] [real] NULL,
+	[WSDISC] [real] NULL,
+	[RDISC] [real] NULL,
+	[PRICEA] [decimal](18, 2) NULL,
+	[PRICEB] [decimal](18, 2) NULL,
+	[PRICEC] [decimal](18, 2) NULL,
+	[PRICED] [decimal](18, 2) NULL,
+	[TYPE] [smallint] NULL,
+	[FRANCHISEE] [varchar](10) NULL,
+	[PRICE1] [decimal](19, 2) NULL,
+	[PRICE2] [decimal](19, 2) NULL,
+	[PRICE3] [decimal](19, 0) NULL,
+	[ISBN10] [varchar](20) NULL,
+	[BKTYPE] [smallint] NULL,
+	[MINQTY] [int] NULL,
+	[CATEGORY1] [varchar](8) NULL,
+	[SEM] [smallint] NULL,
+	[LC1001] [nvarchar](10) NULL,
+	[LC2001] [nvarchar](10) NULL,
+	[exceptional] [bit] NOT NULL,
+	[Special] [bit] NOT NULL,
+	[MODBYspe] [varchar](6) NULL,
+	[MODDATEspe] [datetime] NULL,
+	[ISUSED] [bit] NULL
+) ON [PRIMARY]
+
+GO
+
+SET ANSI_PADDING OFF
+GO
+
+
+USE [BES]
+GO
+
+/****** Object:  Table [dbo].[t_User]    Script Date: 03/07/2013 21:08:52 ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+SET ANSI_PADDING ON
+GO
+
+CREATE TABLE [dbo].[t_User](
+	[userid] [int] IDENTITY(1,1) NOT NULL,
+	[usertype] [int] NULL,
+	[username] [varchar](50) NULL,
+	[userpassword] [varchar](50) NULL,
+	[companycode] [varchar](50) NULL
+) ON [PRIMARY]
+
+GO
+
+SET ANSI_PADDING OFF
+GO
+
+
